@@ -21,18 +21,6 @@ const ServiceDetail = ({ params }) => {
             "service_image": "/test_image/img3.jpeg",
             "service_description": "Improve website ranking with advanced SEO techniques and analytics."
         },
-        // {
-        //     "_id": "4",
-        //     "service_name": "Digital Marketing",
-        //     "service_image": "https://example.com/images/digital-marketing.jpg",
-        //     "service_description": "Boost your online presence with targeted marketing strategies."
-        // },
-        // {
-        //     "_id": "5",
-        //     "service_name": "App Development",
-        //     "service_image": "https://example.com/images/app-development.jpg",
-        //     "service_description": "Develop high-performance mobile and web applications for various platforms."
-        // }
     ]
 
     // const { id } = params
