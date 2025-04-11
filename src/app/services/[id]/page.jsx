@@ -29,14 +29,23 @@ const ServiceDetail = ({ params }) => {
     const singleData = data.find(d => d._id === id)
     // console.log(singleData);
 
-    return (
-        <div>
-            <h1>Service Detail - {id}</h1>
-            <h1 className='text-3xl'>{singleData._id} - {singleData.service_name}</h1>
-            <img className='w-96 border-2 border-amber-100 my-4' src={singleData.service_image} alt="" />
-            <p>{singleData.service_description}</p>
-        </div>
-    );
+    if (singleData) {
+        return (
+            <div>
+                <h1>Service Detail - {id}</h1>
+                <h1 className='text-3xl'>{singleData._id} - {singleData.service_name}</h1>
+                <img className='w-96 border-2 border-amber-100 my-4' src={singleData.service_image} alt="" />
+                <p>{singleData.service_description}</p>
+            </div>
+        );
+    }
+    else {
+        return (
+            <div>
+                <h1>Service Not Found</h1>
+            </div>
+        );
+    }
 };
 
 export default ServiceDetail;
