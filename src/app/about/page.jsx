@@ -20,9 +20,11 @@ const About = () => {
 
     return (
         <div>
-            <Link href="/about/address" className='text-2xl text-indigo-400'>Address emnei</Link>
+            {/* create address folder and page.jsx */}
+            
+            {/* <Link href="/about/address" className='text-2xl text-indigo-400'>Address emnei</Link> */}
             <h2 className='text-3xl text-yellow-400'>About Page</h2>
-            <button type='button' className='text-center' onClick={handleNavigation}>Address navigation</button>
+            {/* <button type='button' className='text-center' onClick={handleNavigation}>Address navigation</button> */}
         </div>
     );
 };
